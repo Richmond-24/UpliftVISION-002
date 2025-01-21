@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upliftVISION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="us.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50bg-gray-50 overflow-x-hidden ">
+  
+    <header class="sticky top-0 w-full bg-white dark:bg-gray-800 shadow-md z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">
+                <a href="#Hero" class="hover:text-blue-500 dark:hover:text-blue-400 font-bold text-3xl">
+                    <h1 class="text-white">upliftVISION</h1>
+                </a>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-white hover:text-blue-400">About Us</a>
+                <a href="#services" class="text-white hover:text-blue-400">Services</a>
+                <a href="#projects" class="text-white hover:text-blue-400">Projects</a>
+                <a href="#contact" class="text-white hover:text-blue-400">Contact Us</a>
+                <a href="Contact-us" class="mt-0 inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-full hover:bg-cyan-200">EXPLORE</a> </div>
+
+                
+            <button id="hamburger" class="md:hidden">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Nav -->
+        <nav id="mobile-nav" class="fixed left-0 top-0 w-3/4 h-full width-100vw bg-white dark:bg-gray-800 transform -translate-x-full transition-transform duration-300 z-20 shadow-lg">
+            <div class="p-4">
+                <button id="close-hamburger" class="text-gray-800 dark:text-gray-100">
+                    <svg class="w-6 h-6w-6 h-6 max-w-full " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <ul class="mt-6 space-y-4">
+                    <li><a href="#about" class="block text-gray-800 hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-400">About Us</a></li>
+                    <li><a href="#services" class="block text-gray-800 hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-400">Services</a></li>
+                    <li><a href="#projects" class="block text-gray-800 hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-400">Projects</a></li>
+                    <li><a href="#contact" class="block text-gray-800 hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-400">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script>
+        const Hamburger = document.getElementById('hamburger');
+        const closeHamburger = document.getElementById('close-hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+    
+        // Open mobile nav
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.remove('-translate-x-full');
+        });
+    
+        // Close mobile nav
+        closeHamburger.addEventListener('click', () => {
+            mobileNav.classList.add('-translate-x-full');
+        });
+    </script>
+    
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-gray-800 text-white text-center py-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">Empowering Brands with Creative Advertising</h1>
+            <p class="mt-4 text-lg md:text-xl">upliftVISION Agency specializes in brand building, advertising, and marketing solutions tailored to your needs.</p>
+            <a href="Explore.html" class="mt-6 inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-full hover:bg-gray-100">EXPLORE</a> </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
+            <!-- Image Section -->
+            <div class="w-full md:w-1/2 animate-slide-in-left">
+                <img src="assets/packaging.jpg" alt="About Us" class="rounded-lg shadow-lg">
+            </div>
+            <!-- Text Section -->
+            <div class="w-full md:w-1/2 space-y-6 animate-slide-in-right">
+                <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100">Who We Are</h2>
+                <p class="text-gray-700 dark:text-gray-400 leading-relaxed">
+                    At **upliftVISION**, we are dedicated to helping businesses thrive in the digital era. 
+                    With expertise in advertising, marketing, and IT solutions, we are your one-stop partner 
+                    for innovation and success.
+                </p>
+                <p class="text-gray-700 dark:text-gray-400 leading-relaxed">
+                    Our mission is to empower brands to achieve their full potential by delivering personalized 
+                    strategies, cutting-edge technology, and unmatched creativity. From startups to enterprises, 
+                    we're here to uplift your vision and turn it into reality.
+                </p>
+                <a href="#contact" class="inline-block bg-blue-500 text-white py-2 px-6 rounded-lg shadow hover:bg-blue-600 transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+        <!-- Additional Sections -->
+        <div class="container mx-auto mt-12 space-y-12">
+            <!-- Mission Section -->
+            <div>
+                <h3 class="text-3xl font-semibold text-gray-800 dark:text-gray-100">Our Mission</h3>
+                <p class="mt-4 text-gray-700 dark:text-gray-400 leading-relaxed">
+                    Our mission is to create meaningful connections between brands and their audiences. 
+                    By leveraging the power of creativity, technology, and data, we aim to deliver results-driven strategies 
+                    that inspire trust, foster growth, and leave a lasting impact.
+                </p>
+                <p class="mt-4 text-gray-700 dark:text-gray-400 leading-relaxed">
+                    We envision a future where every brand has the opportunity to stand out, communicate effectively, 
+                    and achieve measurable success in an ever-evolving marketplace.
+                </p>
+            </div>
+            <!-- Company Values Section -->
+            <div>
+                <h3 class="text-3xl font-semibold text-gray-800 dark:text-gray-100">Our Values</h3>
+                <ul class="mt-4 list-disc pl-6 text-gray-700 dark:text-gray-400 leading-relaxed space-y-2">
+                    <li><strong>Integrity:</strong> We believe in building trust through transparency and accountability in all our interactions.</li>
+                    <li><strong>Innovation:</strong> Constantly exploring new ideas, tools, and methods to stay ahead in a competitive landscape.</li>
+                    <li><strong>Collaboration:</strong> Partnering with clients and fostering teamwork to deliver the best outcomes.</li>
+                    <li><strong>Excellence:</strong> Striving for quality and precision in every project we undertake.</li>
+                    <li><strong>Customer-Centered:</strong> Prioritizing the unique needs and goals of our clients to ensure their success.</li>
+                </ul>
+            </div>
+            <!-- Why Choose Us Section -->
+            <div>
+                <h3 class="text-3xl font-semibold text-gray-800 dark:text-gray-100">Why Choose Us</h3>
+                <p class="mt-4 text-gray-700 dark:text-gray-400 leading-relaxed">
+                    Choosing the right branding strategy can make all the difference in your journey to success. Here's why upliftVISION is the perfect choice for your business:
+                </p>
+                <ul class="mt-4 list-disc pl-6 text-gray-700 dark:text-gray-400 leading-relaxed space-y-2">
+                    <li><strong>Proven Expertise:</strong> Our team comprises industry experts with a track record of delivering successful campaigns and innovative solutions.</li>
+                    <li><strong>Tailored Strategies:</strong> We craft personalized approaches to meet your specific needs and objectives, ensuring optimal outcomes.</li>
+                    <li><strong>Cutting-Edge Technology:</strong> From advanced analytics to the latest digital tools, we stay at the forefront of technological advancements.</li>
+                    <li><strong>End-to-End Support:</strong> From initial consultation to final execution, we provide seamless support throughout your project journey.</li>
+                    <li><strong>Results-Driven Approach:</strong> We focus on delivering measurable results that align with your business goals.</li>
+                </ul>
+                <p class="mt-4 text-gray-700 dark:text-gray-400 leading-relaxed">
+                    Partner with us to experience the difference of working with a dedicated team that truly cares about your success.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Services Section -->
+<section id="services" class="py-16 bg-gray-50 dark:bg-gray-900  pt-60">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 text-gray-800 dark:text-gray-100">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="p-6 bg-white dark:bg-gray-800 shadow-md rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-16 h-16 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l4-4-4-4m8 8l-4-4 4-4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">Advertising</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    Build impactful campaigns that resonate with your audience and deliver measurable results.
+                </p>
+                <a href="/marketing.html" class="inline-block bg-blue-500 text-white py-2 px-6 rounded-lg shadow hover:bg-blue-600">
+                    Learn More
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-6 bg-white dark:bg-gray-800 shadow-md rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3M17 16h4M21 12h-4M21 8h-4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:ext-gray-100">Marketing</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    Create tailored marketing strategies to grow your audience and enhance engagement.
+                </p>
+                <a href="/ads.html" class="inline-block bg-green-500 text-white py-2 px-6 rounded-lg shadow hover:bg-green-600">
+                    Learn More
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-6 bg-white dark:bg-gray-800 shadow-md rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-16 h-16 text-purple-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3 0 1.66 1.34 3 3 3 1.66 0 3-1.34 3-3 0-1.657-1.34-3-3-3zm0-6c5.523 0 10 4.477 10 10S17.523 22 12 22 2 17.523 2 12 6.477 2 12 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">IT Solutions</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    Empower your business with cutting-edge IT solutions tailored to your needs.
+                </p>
+                <a href="/It solutions.html" class="inline-block bg-purple-500 text-white py-2 px-6 rounded-lg shadow hover:bg-purple-600">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!-- Projects Section -->
+<section id="projects" class="py-16 bg-white dark:bg-gray-900">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-12">Our Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="p-6 bg-gray-50 dark:bg-gray-800 shadow-md rounded-lg hover:shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Brand Awareness Campaign</h3>
+                <p class="text-gray-700 dark:text-gray-400 mb-4">
+                    A strategic advertising campaign designed to boost brand visibility and engagement.
+                </p>
+                <div class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                    <p><strong>Service:</strong> Advertising</p>
+                    <p><strong>Client:</strong> Ella's Grains</p>
+                    <p><strong>Completed:</strong> November 2024</p>
+                </div>
+                <a href="/projects/brand-awareness" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 font-medium">
+                    View Project →
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="p-6 bg-gray-50 dark:bg-gray-800 shadow-md rounded-lg hover:shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">E-Commerce Growth Plan</h3>
+                <p class="text-gray-700 dark:text-gray-400 mb-4">
+                    Comprehensive marketing strategy to drive sales and grow online presence for an e-commerce brand.
+                </p>
+                <div class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                    <p><strong>Service:</strong> Marketing</p>
+                    <p><strong>Client:</strong> ComfyQuest</p>
+                    <p><strong>Completed:</strong> October2024</p>
+                </div>
+                <a href="/projects/ecommerce-growth" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 font-medium">
+                    View Project →
+                </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="p-6 bg-gray-50 dark:bg-gray-800 shadow-md rounded-lg hover:shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Cloud Infrastructure Setup</h3>
+                <p class="text-gray-700 dark:text-gray-400 mb-4">
+                    Implemented a scalable and secure cloud solution for a growing tech startup.
+                </p>
+                <div class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                    <p><strong>Service:</strong> IT Solutions</p>
+                    <p><strong>Client:</strong>Uptop.Net</p>
+                    <p><strong>Completed:</strong> March 2024</p>
+                </div>
+                <a href="/projects/cloud-setup" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 font-medium">
+                    View Project →
+                </a>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+        
+       
+        <section id="testimonials" class="py-16 bg-gray-100 dark:bg-gray-900">
+            <div class="container mx-auto text-center">
+              <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-8">
+                What Our Clients Say
+              </h2>
+              <div class="relative max-w-4xl mx-auto">
+                <!-- Slider Container -->
+                <div id="testimonial-slider" class="flex transition-transform duration-700 ease-in-out">
+                  <!-- Testimonial 1 -->
+                  <div class="min-w-full flex flex-col items-center space-y-4">
+                    <img src="client1.jpg" alt="Client 1" class="w-24 h-24 rounded-full shadow-md">
+                    <p class="text-lg italic text-gray-700 dark:text-gray-400">
+                      "upliftVISION transformed our business. Their innovative strategies and dedication to excellence
+                      helped us achieve our goals in record time."
+                    </p>
+                    <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-100">- Alex Johnson</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">CEO, Johnson Tech</p>
+                  </div>
+                  <!-- Testimonial 2 -->
+                  <div class="min-w-full flex flex-col items-center space-y-4">
+                    <img src="client2.jpg" alt="Client 2" class="w-24 h-24 rounded-full shadow-md">
+                    <p class="text-lg italic text-gray-700 dark:text-gray-400">
+                      "Working with upliftVISION was the best decision we've made. Their team is incredibly professional,
+                      creative, and always goes the extra mile."
+                    </p>
+                    <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-100">- Sarah Carter</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Marketing Director, Bright Solutions</p>
+                  </div>
+                  <!-- Testimonial 3 -->
+                  <div class="min-w-full flex flex-col items-center space-y-4">
+                    <img src="client3.jpg" alt="Client 3" class="w-24 h-24 rounded-full shadow-md">
+                    <p class="text-lg italic text-gray-700 dark:text-gray-400">
+                      "Their approach is truly unique. upliftVISION helped us navigate complex challenges and come out on top. Highly recommended!"
+                    </p>
+                    <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-100">- Michael Smith</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Founder, Smith Enterprises</p>
+                  </div>
+                </div>
+          
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-6 space-x-3">
+                  <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+                  <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+                  <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <script>
+            const slider = document.getElementById("testimonial-slider");
+            const dots = document.querySelectorAll(".dot");
+            let index = 0;
+          
+            function updateSlider() {
+              // Update slider transform
+              slider.style.transform = `translateX(-${index * 100}%)`;
+          
+              // Update active dot
+              dots.forEach((dot, i) => {
+                dot.classList.toggle("bg-gray-800", i === index);
+                dot.classList.toggle("bg-gray-400", i !== index);
+              });
+            }
+          
+            function showNextTestimonial() {
+              index = (index + 1) % dots.length; // Loop back to the start
+              updateSlider();
+            }
+          
+            // Automatically slide every 5 seconds
+            setInterval(showNextTestimonial, 5000);
+          
+            // Click event for dots
+            dots.forEach((dot, i) => {
+              dot.addEventListener("click", () => {
+                index = i;
+                updateSlider();
+              });
+            });
+          
+            // Initialize slider
+            updateSlider();
+          </script>
+          
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 text-center">Contact Us</h2>
+            <p class="mt-4 text-center text-gray-600">Have questions or ready to start your next project? Let's connect!</p>
+            <form class="mt-8 max-w-2xl mx-auto space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+                <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg">
+                <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg"></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Blog Section -->
+<section id="blog" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 fade-in-up">Latest Insights</h2>
+            <p class="mt-4 text-lg text-gray-600 fade-in-up">
+                Stay updated with the latest trends in digital marketing and IT solutions.
+            </p>
+        </div>
+
+        <!-- Blog Articles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 fade-in-up">
+                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/600x400" alt="Article Image">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">10 SEO Strategies for 2024</h3>
+                    <p class="mt-4 text-gray-600">
+                        Learn the latest SEO techniques to stay ahead in the digital marketing game.
+                    </p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 fade-in-up delay-100">
+                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/600x400" alt="Article Image">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">AI-Driven IT Solutions</h3>
+                    <p class="mt-4 text-gray-600">
+                        Discover how AI is revolutionizing IT services and enhancing efficiency.
+                    </p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 fade-in-up delay-200">
+                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/600x400" alt="Article Image">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Boost Your Brand with PPC</h3>
+                    <p class="mt-4 text-gray-600">
+                        Explore the best practices for running high-converting PPC campaigns.
+                    </p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- WhatsApp Icon -->
+<div class="fixed bottom-6 right-6 z-50">
+    <a 
+        href="https://wa.me/+233531190274text=Hello,%20I%20have%20a%20query!" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+        aria-label="Message us on WhatsApp"
+    >
+        <!-- WhatsApp Icon SVG -->
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            class="w-8 h-8"
+        >
+        <a 
+    href="https://wa.me/<YOUR_PHONE_NUMBER>?text=Hello,%20I%20have%20a%20query!" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition duration-300 animate-pulse"
+    aria-label="Message us on WhatsApp"
+>
+
+            <path
+                d="M20.52 3.476A11.77 11.77 0 0 0 12.042 0 11.872 11.872 0 0 0 4.81 3.478C1.61 6.678.288 11.03 1.146 15.18L0 24l8.817-1.133a11.801 11.801 0 0 0 5.03 1.17h.004c3.164-.002 6.142-1.232 8.36-3.452A11.853 11.853 0 0 0 24 12.047a11.775 11.775 0 0 0-3.48-8.57ZM12.042 21.745h-.003a10.026 10.026 0 0 1-4.78-1.19l-.344-.182-5.244.674 1.388-5.092-.179-.364a10.07 10.07 0 0 1 1.905-11.64 10.047 10.047 0 0 1 7.257-3.04 9.993 9.993 0 0 1 7.074 2.937 10.06 10.06 0 0 1 2.977 7.14 10.06 10.06 0 0 1-2.974 7.144 10.034 10.034 0 0 1-7.077 2.95Zm5.397-7.504c-.298-.149-1.764-.87-2.037-.97-.273-.1-.47-.149-.668.15-.198.298-.767.97-.94 1.169-.173.2-.347.223-.646.075-.298-.15-1.26-.463-2.4-1.475-.885-.786-1.482-1.754-1.656-2.052-.174-.298-.018-.46.131-.608.134-.134.298-.348.447-.522.15-.174.2-.299.3-.498.1-.199.05-.373-.025-.522-.075-.149-.668-1.618-.915-2.218-.241-.578-.487-.5-.668-.51h-.57c-.199 0-.523.075-.797.373-.274.299-1.044 1.02-1.044 2.48 0 1.46 1.069 2.874 1.218 3.074.15.199 2.105 3.217 5.105 4.513.714.307 1.27.49 1.705.628.717.228 1.37.196 1.885.12.574-.086 1.764-.719 2.015-1.412.248-.695.248-1.29.173-1.412-.075-.123-.272-.198-.57-.347Z"
+            />
+        </svg>
+    </a>
+</div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 md:px-12">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">CreativeDesign Agency</h3>
+              <p class="text-gray-400 mb-4">
+                We are a full-service creative agency dedicated to crafting exceptional digital experiences that captivate and engage.
+              </p>
+              <div class="flex space-x-4">
+                <a href="https://facebook.com/yourprofile" target="_blank" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="https://dribbble.com/yourprofile" target="_blank" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-dribbble text-xl"></i>
+                </a>
+              </div>
+            </div>
+      
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">Quick Links</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Info -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+              <p class="text-gray-400 mb-4">
+                <strong>Address:</strong> 123 Creative St, Design City, ABC 456
+              </p>
+              <p class="text-gray-400 mb-4">
+                <strong>Email:</strong> info@creativedesign.com
+              </p>
+              <p class="text-gray-400 mb-4">
+                <strong>Phone:</strong> +1 (234) 567-890
+              </p>
+            </div>
+          </div>
+      
+          <div class="border-t border-gray-800 pt-6 mt-8 text-center">
+            <p class="text-gray-400 text-sm">
+              &copy; 2024 CreativeDesign Agency. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
